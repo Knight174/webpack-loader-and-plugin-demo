@@ -17,6 +17,7 @@ class CopyrightWebpackPlugin {
       'CopyrightWebpackPlugin',
       (compilation, cb) => {
         console.log('=========== emit hook ===========');
+        // debugger;
         compilation.assets['copyright.txt'] = {
           source: function () {
             return 'copyright by eric';

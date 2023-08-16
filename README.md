@@ -7,6 +7,12 @@ npm i
 npm run build
 ```
 
+## debug
+
+```bash
+npm run debug
+```
+
 ## The Loader Context
 
 - this.query: https://webpack.js.org/api/loaders/#thisquery
