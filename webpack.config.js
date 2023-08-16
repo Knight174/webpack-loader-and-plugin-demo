@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyrightWebpackPlugin = require('./plugins/copyright-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -18,6 +19,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [new CopyrightWebpackPlugin({ name: 'copyright-plugin-test' })],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
